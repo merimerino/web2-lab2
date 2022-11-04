@@ -1,0 +1,92 @@
+[
+  {
+    "position": 1,
+    "league": "A",
+    "nationalAssociation": "Netherlands",
+    "group": "A4",
+    "totalPoints": 16,
+    "goalDiff": 0,
+    "commentsResults": [
+      {
+        "username": "dorisdragovic@gmail.com",
+        "content": "Awesome game!"
+      },
+      {
+        "username": "jurastublic@gmail.com",
+        "content": "Hated watching the game!"
+      }
+    ]
+  },
+  {
+    "position": 2,
+    "league": "A",
+    "nationalAssociation": "Croatia",
+    "group": "A1",
+    "totalPoints": 13,
+    "goalDiff": 0,
+    "commentsResults": [
+      {
+        "username": "dorisdragovic@gmail.com",
+        "content": "Amazing players!"
+      },
+      {
+        "username": "jurastublic@gmail.com",
+        "content": "Booooo!"
+      }
+    ]
+  },
+  {
+    "position": 3,
+    "league": "A",
+    "nationalAssociation": "Spain",
+    "group": "A2",
+    "totalPoints": "11",
+    "goalDiff": 3,
+    "commentsResults": [
+      {
+        "username": "dorisdragovic@gmail.com",
+        "content": "Muchos locos!"
+      },
+      {
+        "username": "jurastublic@gmail.com",
+        "content": "Hated watching the game!"
+      }
+    ]
+  },
+  {
+    "position": 4,
+    "league": "A",
+    "nationalAssociation": "Italy",
+    "group": "A3",
+    "totalPoints": "11",
+    "goalDiff": 1,
+    "commentsResults": [
+      {
+        "username": "dorisdragovic@gmail.com",
+        "content": "Awesome game!"
+      },
+      {
+        "username": "jurastublic@gmail.com",
+        "content": "Hated watching the game!"
+      }
+    ]
+  },
+  {
+    "position": 5,
+    "league": "A",
+    "nationalAssociation": "Portugal",
+    "group": "A2",
+    "totalPoints": "10",
+    "goalDiff": 8,
+    "commentsResults": [
+      {
+        "username": "dorisdragovic@gmail.com",
+        "content": "Awesome game!"
+      },
+      {
+        "username": "jurastublic@gmail.com",
+        "content": "Hated watching the game!"
+      }
+    ]
+  }
+]

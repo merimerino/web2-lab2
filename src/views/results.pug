@@ -1,0 +1,53 @@
+doctype html
+html
+    head
+        style 
+            include style.css
+
+        title UEFA Nations League
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato&display=swap')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+        link(rel="shortcut icon" href="#")
+        nav
+            a.headline(href='/', title='Home') UEFA NATIONS LEAGUE
+            i.ball(i class="fa fa-futbol-o fa-2x" aria-hidden="true")
+            ul
+                li: a(href='/', title='Home') Home
+                li: a(href='/schedule') Schedule
+                li: a(href='/results') Results
+                              
+                if username
+                    li: a(href='/private') User info
+                    li: form(action="/logout", method="get")
+                        input(type="submit", value="Logout")
+                else
+                    li: a(href='/sign-up', title='Sign up') Sign up 
+                
+    
+    body
+        if(email==admin)
+            a.edit(href='/editResults') Add/Edit
+        block.showTable
+            .table-wrapper
+            table.fl-table
+                thead
+                    tr  
+                        th League
+                        th National Association
+                        th Group
+                        th Total Points
+                        th Goal Difference
+                        if username
+                            th Comments
+                    
+                    each item in ranking
+                        tr
+                            td=item.league
+                            td=item.nationalAssociation
+                            td=item.group
+                            td=item.totalPoints
+                            td=item.goalDiff
+                            if username
+                                td.comments: a.btn(href="commentsResults?team="+item.nationalAssociation class="fa fa-comments-o btn" )

@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "build": "npm run clean && tsc && npm run copy-views && npm run copy-views",
+    "clean": "if exist dist rmdir /s /q dist",
+    "copy-views": "robocopy /mir /NFL /NDL /NJH /NJS /nc /ns /np src/views/ dist/views & exit 0",
+    "dev": "nodemon",
+    "start": "ts-node ./src/webapp.ts"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "bootstrap": "^5.2.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.5.0",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "pug": "^3.0.2",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.20",
+    "@types/pg": "^8.6.5"
+  },
+  "engines": {
+    "node": "12.16.3"
+  }
+}

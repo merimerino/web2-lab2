@@ -1,0 +1,106 @@
+[
+  {
+    "matchID": 1,
+    "firstTeam": "Poland",
+    "secondTeam": "Wales",
+    "hasBeenPlayed": true,
+    "finalResult": "2-1",
+    "date": "01.06.2022.",
+    "commentsSchedule": [
+      {
+        "commentID": "1",
+        "username": "dorisdragovic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Awesome game!"
+      }
+    ]
+  },
+  {
+    "matchID": 2,
+    "firstTeam": "Georgia",
+    "secondTeam": "Gibraltar",
+    "hasBeenPlayed": true,
+    "finalResult": "4-0",
+    "date": "02.06.2022.",
+    "commentsSchedule": [
+      {
+        "commentID": "3",
+        "username": "dorisdragovic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Awesome game!"
+      },
+      {
+        "commentID": "4",
+        "username": "jurastublic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Hated watching the game!"
+      }
+    ]
+  },
+  {
+    "matchID": 3,
+    "firstTeam": "Cyprus",
+    "secondTeam": "Kosovo",
+    "hasBeenPlayed": true,
+    "finalResult": "0-2",
+    "date": "01.06.2022.",
+    "commentsSchedule": [
+      {
+        "commentID": "5",
+        "username": "dorisdragovic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Awesome game!"
+      },
+      {
+        "commentID": "6",
+        "username": "jurastublic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Hated watching the game!"
+      }
+    ]
+  },
+  {
+    "matchID": 4,
+    "firstTeam": "Croatia",
+    "secondTeam": "Austria",
+    "hasBeenPlayed": true,
+    "finalResult": "0-3",
+    "date": "03.06.2022.",
+    "commentsSchedule": [
+      {
+        "commentID": "7",
+        "username": "dorisdragovic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Awesome game!"
+      },
+      {
+        "commentID": "8",
+        "username": "jurastublic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Hated watching the game!"
+      }
+    ]
+  },
+  {
+    "matchID": 5,
+    "firstTeam": "Sweden",
+    "secondTeam": "Norway",
+    "hasBeenPlayed": true,
+    "finalResult": "1-2",
+    "date": "05.06.2022.",
+    "commentsSchedule": [
+      {
+        "commentID": "9",
+        "username": "dorisdragovic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Awesome game!"
+      },
+      {
+        "commentID": "10",
+        "username": "jurastublic@gmail.com",
+        "time": "29/10/2022, 19:52:51",
+        "content": "Hated watching the game!"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        style 
+            include style.css
+
+        title UEFA Nations League
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato&display=swap')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+        link(rel="shortcut icon" href="#")
+
+    
+    body
+        
+        .wrap
+            h3.headline Search for the team
+            h4.sql Hacking set to: #{injection}
+            
+            form(action="/user" method='POST')
+                h5.sql Set hacking to:
+                block.search 
+                    input.searchTerm(type="text" name="injection" placeholder="true/false")
+                    input.searchButton(type='submit', value='Submit')
+                h5.sql Input team name:
+                block.search 
+                    input.searchTerm(name='team' type='text' placeholder='Enter team name')
+                    input.searchButton(type='submit', value='Submit')
+
+        if wantedTeam
+            each item in wantedTeam
+                li  League: #{item.league}
+                li  National Association: #{item.nationalassociation}
+                li  Group: #{item.group}
+                li  Total Points: #{item.totalpoints}
+                li  Goal Difference: #{item.goaldiff}
+
+                    
+                
+
+    
