@@ -6,8 +6,6 @@
     "start": "node dist/webapp.js"
   },
   "dependencies": {
-    "body-parser": "^1.20.1",
-    "bootstrap": "^5.2.2",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-openid-connect": "^2.5.0",
@@ -18,12 +16,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.14",
-    "connect-livereload": "^0.6.1",
-    "livereload": "^0.9.3",
     "nodemon": "^2.0.20",
     "@types/pg": "^8.6.5"
-  },
-  "engines": {
-    "node": "12.16.3"
   }
 }
