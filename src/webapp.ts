@@ -25,7 +25,6 @@ export async function getResultsSafe(team: any) {
   const query = await pool.query("SELECT * from results");
   var results = await JSON.parse(JSON.stringify(query)).rows;
   for (let i = 0; i < results.length; i++) {
-    console.log(results[i]);
     if (results[i].nationalassociation.toLowerCase() == team.toLowerCase()) {
       return [results[i]];
     }
@@ -48,7 +47,6 @@ export async function getResultsNotSafe(team: any) {
     `SELECT * FROM results WHERE nationalassociation = '${team}'`
   );
   var results = await JSON.parse(JSON.stringify(query)).rows;
-  console.log("Ovo treba printati prvo: ", results);
   return results;
 }
 
@@ -93,8 +91,6 @@ app.get("/user", function (req, res) {
 
 app.post("/user", function (req, res) {
   var userInput = "";
-  console.log("reqqq", req.body.team);
-  console.log("injection je ", injection);
   if (
     req.body.injection.trim() == "true" ||
     req.body.injection.trim() == "false"
@@ -106,14 +102,12 @@ app.post("/user", function (req, res) {
   }
   var wantedTeam;
   if (injection == "true") {
-    console.log("Injection je true", injection);
     getResultsNotSafe(userInput).then(function (r) {
       wantedTeam = r;
       res.render("user", { wantedTeam, injection });
     });
   } else if (injection == "false") {
     injection = "false";
-    console.log("Injection je false", injection);
     getResultsSafe(userInput).then(function (r) {
       wantedTeam = r;
       res.render("user", { wantedTeam, injection });
@@ -126,13 +120,9 @@ app.post("/user", function (req, res) {
 
 app.get("/admin", function (req, res) {
   var userData;
-  console.log(req.body);
-
-  console.log("Ovdje je injection", injection);
   if (injection == "true") {
     userData = getUserData();
     userData.then(async function (r) {
-      console.log("Evo rezultat: ", r);
       if (r != undefined) {
         userData = r;
         res.render("admin", { userData, injection });
@@ -140,7 +130,6 @@ app.get("/admin", function (req, res) {
       }
     });
   } else if (injection == "false") {
-    console.log("tu sam");
     res.render("admin", { injection });
   } else {
     res.render("admin", { injection });
